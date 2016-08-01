@@ -20,18 +20,18 @@ constructor(props) {
 	id:'home'
   }
   }
-```<br>
+```
 And in the `DARNNavigator.js` add a reference, by <br>
 * First add in the beginning <br>
 ```javascript
 var Home = require('./Home');
-```<br>
+```
 * Assign `initialRouteID = 'home'`<br>
 * Inside `navigatorRenderScene` method add case -<br>
 ```javascript
 case 'home':
 	return (<Home navigator={navigator} route={route} title="Home"/>);
-```<br>
+```
 You are now all setup with your initial view. Run your project to test.
 
 ##Navigation
@@ -44,7 +44,7 @@ you can either push or replace using <br>
 this.props.navigator.push({
       id: 'details'   
       });
-```<br>
+```
 This will push the detailspage over your Home page.
 
 ## Passing Data
@@ -57,7 +57,7 @@ this.props.navigator.push({
       // Your Props
       }
       });
-```<br>
+```
 
 In the 'details' view, get the data as <br>
 ```javascript
