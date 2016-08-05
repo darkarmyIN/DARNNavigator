@@ -21,7 +21,6 @@ class DARNNavigator extends React.Component{
         renderScene={this.navigatorRenderScene}/>
     );
   }
-  }
 
   navigatorRenderScene(route, navigator) {
     switch (route.id) {
